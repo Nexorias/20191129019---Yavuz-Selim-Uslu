@@ -128,6 +128,7 @@ namespace Uyg03Test.Controllers
                 UrunKatId = x.UrunKatId,
                 urunKatAdi = x.Kategori.KatAdi,
                 UrunFiyat = x.UrunFiyat,
+                StokAdet = x.UrunStokAdet,
 
             }).ToList();
 
@@ -144,6 +145,7 @@ namespace Uyg03Test.Controllers
                 UrunKatId = x.UrunKatId,
                 urunKatAdi = x.Kategori.KatAdi,
                 UrunFiyat = x.UrunFiyat,
+                StokAdet = x.UrunStokAdet,
 
             }).ToList();
 
@@ -159,7 +161,8 @@ namespace Uyg03Test.Controllers
                 UrunAdi = x.UrunAdi,
                 urunKatAdi = x.Kategori.KatAdi,
                 UrunKatId = x.UrunKatId,
-                UrunFiyat = x.UrunFiyat
+                UrunFiyat = x.UrunFiyat,
+                StokAdet = x.UrunStokAdet
             }).FirstOrDefault();
             return kayit;
         }
@@ -181,6 +184,7 @@ namespace Uyg03Test.Controllers
             yeni.UrunAdi = Model.UrunAdi;
             yeni.UrunFiyat = Model.UrunFiyat;
             yeni.UrunKatId = Model.UrunKatId;
+            yeni.UrunStokAdet = Model.StokAdet;
 
             db.Urun.Add(yeni);
             db.SaveChanges();
@@ -205,6 +209,7 @@ namespace Uyg03Test.Controllers
             kayit.UrunAdi = Model.UrunAdi;
             kayit.UrunFiyat = Model.UrunFiyat;
             kayit.UrunKatId = Model.UrunKatId;
+            kayit.UrunStokAdet = Model.StokAdet;
             db.SaveChanges();
 
             sonuc.islem = true;

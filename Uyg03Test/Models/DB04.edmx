@@ -95,7 +95,7 @@
           <Property Name="UrunAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UrunKatId" Type="Int32" Nullable="false" />
           <Property Name="UrunFiyat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
-          <Property Name="UrunStok" Type="Int32" Nullable="false" />
+          <Property Name="UrunStokAdet" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Kategori" Relationship="Self.FK_Urun_ToKategori" FromRole="Urun" ToRole="Kategori" />
           <NavigationProperty Name="Stok" Relationship="Self.FK_Stok_ToUrun" FromRole="Urun" ToRole="Stok" />
         </EntityType>
@@ -165,7 +165,7 @@
                 <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
                 <ScalarProperty Name="UrunKatId" ColumnName="UrunKatId" />
                 <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
-                <ScalarProperty Name="UrunStok" ColumnName="UrunStok" />
+                <ScalarProperty Name="UrunStokAdet" ColumnName="UrunStok" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
