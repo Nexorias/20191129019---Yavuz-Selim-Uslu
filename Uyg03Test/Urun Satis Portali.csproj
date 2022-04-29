@@ -102,15 +102,15 @@
       <DependentUpon>DB02.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="Models\DB04.Context.tt">
+    <Content Include="Models\DB06.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB04.edmx</DependentUpon>
-      <LastGenOutput>DB04.Context.cs</LastGenOutput>
+      <DependentUpon>DB06.edmx</DependentUpon>
+      <LastGenOutput>DB06.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DB04.tt">
+    <Content Include="Models\DB06.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB04.edmx</DependentUpon>
-      <LastGenOutput>DB04.cs</LastGenOutput>
+      <DependentUpon>DB06.edmx</DependentUpon>
+      <LastGenOutput>DB06.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -121,42 +121,41 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB04.Context.cs">
+    <Compile Include="Models\DB06.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB04.Context.tt</DependentUpon>
+      <DependentUpon>DB06.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB04.cs">
+    <Compile Include="Models\DB06.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB04.tt</DependentUpon>
+      <DependentUpon>DB06.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB04.Designer.cs">
+    <Compile Include="Models\DB06.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB04.edmx</DependentUpon>
+      <DependentUpon>DB06.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Kategori.cs">
-      <DependentUpon>DB04.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Stok.cs">
-      <DependentUpon>DB04.tt</DependentUpon>
+      <DependentUpon>DB06.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Urun.cs">
-      <DependentUpon>DB04.tt</DependentUpon>
+      <DependentUpon>DB06.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\KategoriModel.cs" />
     <Compile Include="ViewModel\SonucModel.cs" />
+    <Compile Include="ViewModel\UrunDuzenlemeModeli.cs" />
+    <Compile Include="ViewModel\UrunEklemeModel.cs" />
     <Compile Include="ViewModel\UrunModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\DB04.edmx">
+    <EntityDeploy Include="Models\DB06.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB04.Designer.cs</LastGenOutput>
+      <LastGenOutput>DB06.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DB04.edmx.diagram">
-      <DependentUpon>DB04.edmx</DependentUpon>
+    <Content Include="Models\DB06.edmx.diagram">
+      <DependentUpon>DB06.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

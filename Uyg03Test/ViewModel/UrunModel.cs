@@ -7,11 +7,12 @@ namespace Uyg03Test.ViewModel
 {
     public class UrunModel
     {
-        public int UrunId { get; set; }
+        public string UrunId { get; set; }
         public string UrunAdi { get; set; }
-        public int UrunKatId { get; set; }
-        public string urunKatAdi { get; set; }
+        public string UrunKatId { get; set; }
+        public string UrunKatAdi { get; set; }
         public decimal UrunFiyat { get; set; }
+        public string StokDurum { get; set; }
         public int StokAdet { get; set; }
     }
 }

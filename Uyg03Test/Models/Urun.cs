@@ -14,20 +14,13 @@ namespace Uyg03Test.Models
     
     public partial class Urun
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Urun()
-        {
-            this.Stok = new HashSet<Stok>();
-        }
-    
-        public int UrunId { get; set; }
+        public string UrunId { get; set; }
         public string UrunAdi { get; set; }
-        public int UrunKatId { get; set; }
+        public string UrunKatId { get; set; }
         public decimal UrunFiyat { get; set; }
+        public string UrunStokDurum { get; set; }
         public int UrunStokAdet { get; set; }
     
         public virtual Kategori Kategori { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Stok> Stok { get; set; }
     }
 }

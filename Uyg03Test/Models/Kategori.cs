@@ -20,7 +20,7 @@ namespace Uyg03Test.Models
             this.Urun = new HashSet<Urun>();
         }
     
-        public int KatId { get; set; }
+        public string KatId { get; set; }
         public string KatAdi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

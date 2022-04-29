@@ -7,7 +7,7 @@ namespace Uyg03Test.ViewModel
 {
     public class KategoriModel
     {
-        public int KatId { get; set; }
+        public string KatId { get; set; }
         public string KatAdi { get; set; }
         public int KatUrunSay { get; set; }
     }
