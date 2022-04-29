@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB02ModelStoreContainer" CdmEntityContainer="DB02Entities3">
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DB02Model.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="KatId" ColumnName="KatId" />
+          <ScalarProperty Name="KatAdi" ColumnName="KatAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stok">
+      <EntityTypeMapping TypeName="DB02Model.Stok">
+        <MappingFragment StoreEntitySet="Stok">
+          <ScalarProperty Name="StokAdet" ColumnName="StokAdet" />
+          <ScalarProperty Name="StokUrunId" ColumnName="StokUrunId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="DB02Model.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunKatId" ColumnName="UrunKatId" />
+          <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+          <ScalarProperty Name="UrunStokAdet" ColumnName="UrunStok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
